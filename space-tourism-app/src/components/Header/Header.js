@@ -1,5 +1,7 @@
 import './header.css'
 import logo from '../../starter-code/assets/shared/logo.svg'
+import { Link } from 'react-router-dom'
+
 
 export default function Header() {
     return (
@@ -10,12 +12,13 @@ export default function Header() {
             </svg>
         <nav className="navbar">
             <ul className="menu">
-                <li>00 HOME</li>
-                <li>01 DESTINATION</li>
+                <Link to={'/home'}>00 HOME</Link>
+                <Link to={'/destinations'}>01 DESTINATION</Link>
                 <li>02 CREW</li>
                 <li>03 TECHNOLOGY</li>
             </ul>
         </nav>
+
         </header>
     )
 }
