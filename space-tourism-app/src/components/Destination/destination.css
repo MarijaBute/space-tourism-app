@@ -1,7 +1,7 @@
-/*body {
-    background-image: url('../../starter-code/assets/destination/background-destination-desktop.jpg'); 
-    background-size: cover; 
+.destination-background{
+    background-image: url('../../starter-code/assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    color: #ffffff;
-}*/
+    height: 100vh;
+}

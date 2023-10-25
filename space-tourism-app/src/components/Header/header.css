@@ -9,14 +9,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    width: 100%;
 }
 
 .navbar{
-    margin-right: -15px;
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
-    padding: 15px 167px 15px 110px;
+    padding: 1% 10% 1% 2%;
 }
 
 .menu{
@@ -25,15 +24,31 @@ header {
     gap: 50px;
 }
 
-.menu li {
-color: #FFF;
-font-family: Barlow Condensed, sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 2.7px;
+.menu li a{
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+}
 
+.navbar-numbers {
+    color: #FFF;
+    font-family: Barlow Condensed, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+
+    
 }
 
 svg{

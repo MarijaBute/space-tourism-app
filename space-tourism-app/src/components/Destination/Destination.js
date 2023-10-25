@@ -1,10 +1,15 @@
+import Header from '../Header/Header'
 import './destination.css'
-//import Header from '../Header/Header'
 
 export default function Destination() {
     return (
-        <div>
-            
+        <div className="destination-background">
+            <Header />
+        <div className="container">
+        <div className="destination-content">
+            <p>DESTINATION</p>
+        </div>
+        </div>
         </div>
     )
 }

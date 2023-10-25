@@ -1,0 +1,7 @@
+.crew-background{
+    background-image: url('../../starter-code/assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 100vh;
+}
