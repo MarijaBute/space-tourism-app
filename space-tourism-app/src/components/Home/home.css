@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500;700&family=Bellefair&family=Kumbh+Sans&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
-
-.home-background{
+  
+.home-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background-image: url('./../../starter-code/assets/home/background-home-desktop.jpg');
-    background-size: cover;
+    background-size:cover; 
     background-repeat: no-repeat;
-    height: 100vh;
+    background-attachment: fixed;
+    height: 100%;
     width: 100%;
 }
 
-.container {
+.home-content-container{
     display: flex;
+    justify-content:space-between;
     align-items: end;
     flex-direction: row;
-    justify-content:space-between;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    margin-inline: 15%;
+    margin-top: 20%;
+    margin-inline: 165px;
 }
 
 .home-content{
@@ -23,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 45%;
+    max-width: 450px;
 }
 
 h3{
@@ -55,7 +59,7 @@ p{
     line-height: 32px; 
 }
 
-.explore {
+.home-explore {
     font-family: Bellefair;
     font-size: 23px;
     border-radius: 50%;

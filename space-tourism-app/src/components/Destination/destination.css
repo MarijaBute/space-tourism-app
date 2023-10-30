@@ -1,7 +1,134 @@
 .destination-background{
     background-image: url('../../starter-code/assets/destination/background-destination-desktop.jpg');
-    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size:cover; 
     background-repeat: no-repeat;
-    background-attachment: fixed; 
-    height: 100vh;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.destination-header {
+    position: relative;
+    top: 200px;
+    left: 165px;
+    max-width: 400px;
+}
+
+.destination-header-number {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+
+.destination-header-text {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.destination-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 200px;
+}
+
+.destination-planet-image img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.destination-text-content {
+    width: 445px;
+}
+
+.destination-nav-menu {
+    display: flex;
+    justify-content: start;
+    gap: 35px;
+    padding: 0;
+
+}
+
+.destination-nav-title {
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.destination-title {
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block: 50px;
+}
+
+.destination-description {
+    border-bottom: 1px solid #383B4B;
+    padding-bottom: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.destination-text-content {
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.destination-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.destination-distance-travel {
+    display: flex;
+    gap: 80px;
+}
+
+.destination-headers {
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+
+.destination-numbers {
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
