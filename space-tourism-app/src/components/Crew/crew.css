@@ -10,3 +10,37 @@
     height: 100%;
     width: 100%;
 }
+
+.crew-header {
+    position: relative;
+    top: 200px;
+    left: 165px;
+    max-width: 400px;
+}
+
+.crew-header-number {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+    margin-right: 20px;
+}
+
+.crew-header-text {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+img {
+    visibility: visible;
+}

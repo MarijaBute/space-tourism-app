@@ -5,6 +5,8 @@ import moonImage1 from "./image-moon.png"
 export default function Destination() {
     const moonImage = jsonData.destinations[0].images.png
     const moonDescription = jsonData.destinations[0].description
+
+
     return (
         <div className="destination-background">
             <div className="destination-container">
