@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: flex-end;
     gap: 50px;
-    margin: 40px 165px 40px 120px ;
+    margin: 30px 165px 30px 120px ;
 }
 
 .menu li a{

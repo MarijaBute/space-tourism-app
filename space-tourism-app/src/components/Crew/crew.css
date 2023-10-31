@@ -1,5 +1,5 @@
-.crew-background{
-    background-image: url('../../starter-code/assets/crew/background-crew-desktop.jpg');
+.crew-container{
+    background-image: url('./../assets/crew/background-crew-desktop.jpg');
     position: absolute;
     top: 0;
     left: 0;
