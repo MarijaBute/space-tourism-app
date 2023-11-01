@@ -1,25 +1,49 @@
-import './crew.css'
-
+import './crew.css';
+import { useState } from 'react';
+import { data } from '../data';
 
 export default function Crew() {
+  const [crew] = useState(data.crew);
+  const [value, setValue] = useState(0);
 
-    return (
-        <div className="crew-container">
-                <div className="crew-content">
-                    <div className="crew-header">
-                        <span className="crew-header-number">02</span>
-                        <span className="crew-header-text">MEET YOUR CREW</span>
-                    </div>
-                    <div className="crew-content-container">
-                        <div className="crew-text-content">
-                            <h1 className="crew-name"></h1>
-                            <p className="crew-bio"></p>
-                        </div>
-                        <div className="crew-image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-    )
+  const { name, role, bio, images } = crew[value];
 
+  return (
+    <div className="crew-container">
+      <div className="crew-header">
+        <span className="crew-header-number">02</span>
+        <span className="crew-header-text">MEET YOUR CREW</span>
+      </div>
+      <div className="crew-content">
+        <div className="crew-content-container">
+          <div className="crew-text-content">
+            <h3 className='crew-role'>{role}</h3>
+            <h1 className="crew-name">{name}</h1>
+            <p className="crew-bio">{bio}</p>
+
+            <ul className="circles">
+              {crew.map((item, index) => (
+                <li key={index} className='circle'>
+                  <button
+                    onClick={() => setValue(index)}
+                    style={{
+                      backgroundColor: index === value ? '#fff' : '#808080',
+                      color: index === value ? '#808080' : '#fff',
+                      borderRadius: '50%',
+                      border: 'none',
+                      height: '11px',
+                    }}
+                  >
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="crew-image">
+            <img src={images.png} alt={name} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

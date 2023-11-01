@@ -1,4 +1,5 @@
 import { MoonImage, MarsImage, EuropaImage, TitanImage } from "./assets"
+import {DouglasImage, MarkImage, VictorImage, AnoushehImage} from "./assets"
 export const data = {
         "destinations": [
           {
@@ -46,7 +47,7 @@ export const data = {
           {
             "name": "Douglas Hurley",
             "images": {
-              "png": "./assets/crew/image-douglas-hurley.png",
+              "png": DouglasImage,
               "webp": "./assets/crew/image-douglas-hurley.webp"
             },
             "role": "Commander",
@@ -55,7 +56,7 @@ export const data = {
           {
             "name": "Mark Shuttleworth",
             "images": {
-              "png": "./assets/crew/image-mark-shuttleworth.png",
+              "png": MarkImage,
               "webp": "./assets/crew/image-mark-shuttleworth.webp"
             },
             "role": "Mission Specialist",
@@ -64,7 +65,7 @@ export const data = {
           {
             "name": "Victor Glover",
             "images": {
-              "png": "./assets/crew/image-victor-glover.png",
+              "png": VictorImage,
               "webp": "./assets/crew/image-victor-glover.webp"
             },
             "role": "Pilot",
@@ -73,7 +74,7 @@ export const data = {
           {
             "name": "Anousheh Ansari",
             "images": {
-              "png": "./assets/crew/image-anousheh-ansari.png",
+              "png": AnoushehImage,
               "webp": "./assets/crew/image-anousheh-ansari.webp"
             },
             "role": "Flight Engineer",
