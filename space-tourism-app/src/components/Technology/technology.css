@@ -1,4 +1,4 @@
-.technology-background{
+.technology-container{
     background-image: url('./../assets/technology/background-technology-desktop.jpg');
     position: absolute;
     top: 0;
@@ -7,6 +7,108 @@
     background-size:cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
     width: 100%;
+    height: 100dvh;
+}
+
+.technology-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 10%;
+    margin-left: 165px;
+}
+
+.technology-header {
+    max-width: 400px;
+}
+
+.technology-header-number {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+
+.technology-header-text {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.technology-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+}
+
+.technology-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.technology-button {
+    width: 70px; 
+    height: 70px;
+    border: 0.5px solid white; 
+    border-radius: 50%;
+    background-color: transparent; 
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.technology-button:hover {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
+}
+
+.technology-button-active {
+    background-color: white; 
+    color: black;
+}
+
+.technology-terminology {
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.technology-name {
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.technology-description {
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
 }

@@ -6,6 +6,9 @@ import DouglasImage from './crew/image-douglas-hurley.png'
 import MarkImage from './crew/image-mark-shuttleworth.png'
 import VictorImage from './crew/image-victor-glover.png'
 import AnoushehImage from './crew/image-anousheh-ansari.png'
+import LauchVehicleImage from './technology/image-launch-vehicle-portrait.jpg'
+import SpaceportImage from './technology/image-spaceport-portrait.jpg'
+import SpaceCapsuleImage from './technology/image-space-capsule-portrait.jpg'
 
 export {
     MoonImage,
@@ -15,5 +18,8 @@ export {
     DouglasImage,
     MarkImage,
     VictorImage,
-    AnoushehImage
+    AnoushehImage,
+    LauchVehicleImage,
+    SpaceportImage,
+    SpaceCapsuleImage
 }

@@ -10,11 +10,11 @@ export default function Crew() {
 
   return (
     <div className="crew-container">
-      <div className="crew-header">
-        <span className="crew-header-number">02</span>
-        <span className="crew-header-text">MEET YOUR CREW</span>
-      </div>
       <div className="crew-content">
+          <div className="crew-header">
+          <span className="crew-header-number">02</span>
+          <span className="crew-header-text"> MEET YOUR CREW</span>
+      </div>
         <div className="crew-content-container">
           <div className="crew-text-content">
             <h3 className='crew-role'>{role}</h3>
@@ -32,9 +32,17 @@ export default function Crew() {
                       borderRadius: '50%',
                       border: 'none',
                       height: '11px',
+                      transition: 'background-color 0.3s',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.backgroundColor = 'rgb(72, 72, 72)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.backgroundColor = index === value ? '#fff' : '#808080'; 
                     }}
                   >
                   </button>
+
                 </li>
               ))}
             </ul>

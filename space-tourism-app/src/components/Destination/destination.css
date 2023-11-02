@@ -75,6 +75,7 @@
     line-height: normal;
     letter-spacing: 2.7px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .destination-title {

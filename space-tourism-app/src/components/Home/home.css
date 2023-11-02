@@ -64,8 +64,14 @@ p{
     font-size: 23px;
     border-radius: 50%;
     border: none;
-    padding: 90px 60px;
+    padding: 90px 60px; 
     background-color: #ffffff;
+    transition: box-shadow 0.3s;
+    cursor: pointer;
 }
+
+.home-explore:hover {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1036);
+} 
 
 
