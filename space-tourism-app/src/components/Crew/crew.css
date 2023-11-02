@@ -79,6 +79,11 @@
     text-transform: uppercase;
 }
 
+.crew-bio-container {
+    height: 200px; 
+    overflow-y: auto; 
+  }
+
 .crew-bio {
     color: #D0D6F9;
     font-family: Barlow;
@@ -86,6 +91,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px; 
+    margin-bottom: 0;
 }
 
 .circles {

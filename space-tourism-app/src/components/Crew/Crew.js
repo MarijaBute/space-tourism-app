@@ -1,12 +1,12 @@
 import './crew.css';
-import { useState } from 'react';
-import { data } from '../data';
+import { useState } from 'react'
+import { data } from '../data'
 
 export default function Crew() {
-  const [crew] = useState(data.crew);
-  const [value, setValue] = useState(0);
+  const [crew] = useState(data.crew)
+  const [value, setValue] = useState(0)
 
-  const { name, role, bio, images } = crew[value];
+  const { name, role, bio, images } = crew[value]
 
   return (
     <div className="crew-container">
@@ -19,8 +19,9 @@ export default function Crew() {
           <div className="crew-text-content">
             <h3 className='crew-role'>{role}</h3>
             <h1 className="crew-name">{name}</h1>
-            <p className="crew-bio">{bio}</p>
-
+            <div className="crew-bio-container">
+              <p className="crew-bio">{bio}</p>
+            </div>
             <ul className="circles">
               {crew.map((item, index) => (
                 <li key={index} className='circle'>
@@ -31,7 +32,8 @@ export default function Crew() {
                       color: index === value ? '#808080' : '#fff',
                       borderRadius: '50%',
                       border: 'none',
-                      height: '11px',
+                      height: '15px',
+                      width: '15px',
                       transition: 'background-color 0.3s',
                     }}
                     onMouseEnter={(e) => {
@@ -53,5 +55,5 @@ export default function Crew() {
         </div>
       </div>
     </div>
-  );
+  )
 }
