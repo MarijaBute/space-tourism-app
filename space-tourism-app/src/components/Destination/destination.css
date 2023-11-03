@@ -11,6 +11,22 @@
     height: 100dvh;
 }
 
+@media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
+        .destination-container {
+            background-image: url('./../assets/destination/background-destination-tablet.jpg');
+        }
+}
+}
+
+@media screen and (max-width: 767px) {
+    .destination-container {
+        background-image: url('./../assets/destination/background-destination-mobile.jpg');
+    }
+}
+
+
+
 .destination-content {
     display: flex;
     flex-direction: column;

@@ -12,6 +12,21 @@
     overflow: hidden; /* Hide any potential overflow content */
 }
 
+@media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
+        .technology-container {
+            background-image: url('./../assets/technology/background-technology-tablet.jpg');
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .technology-container {
+        background-image: url('./../assets/technology/background-technology-mobile.jpg');
+    }
+}
+
+
 .technology-content {
     display: flex;
     flex-direction: column;
