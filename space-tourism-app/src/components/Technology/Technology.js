@@ -31,7 +31,7 @@ function handleTechnologySelect (index) {
                 <p className='technology-description'>{selectedTechnology.description}</p>
             </div>
             <div>
-                <img src={selectedTechnology.images.portrait} alt={selectedTechnology.name}/>
+                <img src={selectedTechnology.images.portrait} alt={selectedTechnology.name} className='technology-img'/>
             </div>
         </div>
       </div>
