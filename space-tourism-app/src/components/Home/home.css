@@ -13,29 +13,6 @@
     width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-    @media screen and (max-width: 1024px) {
-        .home-container {
-            background-image: url('./../assets/home/background-home-tablet.jpg');
-        }
-    
-        .home-content-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            margin-top: 20px;
-            margin-inline: 0;
-        }
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-    .home-container {
-        background-image: url('./../assets/home/background-home-mobile.jpg');;
-    }
-}
-
 .home-content-container{
     display: flex;
     justify-content:space-between;
@@ -96,5 +73,41 @@ p{
 .home-explore:hover {
     box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1036);
 } 
+
+@media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
+        .home-container {
+            background-image: url('./../assets/home/background-home-tablet.jpg');
+        }
+    
+        .home-content-container {
+            flex-direction: column;
+            align-items: center; 
+            margin-top: 30%;
+            margin-inline: 0;
+            gap: 150px;
+        }
+
+        .home-content {
+            align-items: center;
+            max-width: 450px;
+        }
+
+        .home-content span {
+            font-size: 150px;
+        }
+
+        .home-content p {
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .home-container {
+        background-image: url('./../assets/home/background-home-mobile.jpg');;
+    }
+}
 
 

@@ -1,6 +1,6 @@
 .technology-container {
     background-image: url('./../assets/technology/background-technology-desktop.jpg');
-    position: fixed; /* Change from absolute to fixed */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -9,20 +9,20 @@
     background-attachment: fixed;
     height: 100%;
     width: 100%;
-    overflow: hidden; /* Hide any potential overflow content */
+    overflow: hidden; 
 }
 
 @media screen and (max-width: 1024px) {
     @media screen and (max-width: 1024px) {
         .technology-container {
-            background-image: url('./../assets/technology/background-technology-tablet.jpg');
+            background-image: url('./../assets/technology/background-technology-tablet.jpg')
         }
     }
 }
 
 @media screen and (max-width: 767px) {
     .technology-container {
-        background-image: url('./../assets/technology/background-technology-mobile.jpg');
+        background-image: url('./../assets/technology/background-technology-mobile.jpg')
     }
 }
 
