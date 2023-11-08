@@ -11,19 +11,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-    @media screen and (max-width: 1024px) {
-        .crew-container {
-            background-image: url('./../assets/crew/background-crew-tablet.jpg');
-        }
-    }
-}
 
-@media screen and (max-width: 767px) {
-    .crew-container {
-        background-image: url('./../assets/crew/background-crew-mobile.jpg');
-    }
-}
 .crew-content {
     display: flex;
     flex-direction: column;
@@ -132,4 +120,82 @@
 .crew-image img{
     width: 430px;
     height: 590px;
+}
+
+@media screen and (max-width: 1024px) {
+        .crew-container {
+            background-image: url('./../assets/crew/background-crew-tablet.jpg');
+        }
+
+        .crew-content {
+            flex-direction: column;
+            margin-top: 10%;
+            margin-left: auto; 
+            margin-right: auto;
+            gap: 10px;
+        }
+    
+        .crew-header {
+            max-width: 100%;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        
+        .crew-header-number {
+            font-size: 20px;
+            letter-spacing: 3.375px;
+        }
+    
+        .crew-header-text {
+            font-size: 20px;
+            letter-spacing: 3.375px;
+        }
+
+        .crew-content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 0;
+        }
+    
+        .crew-text-content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .crew-role {
+            font-size: 24px;
+        }
+
+        .crew-name {
+            font-size: 40px;
+        }
+
+        .crew-bio {
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .crew-image {
+            position: inherit;
+            left: 50px;
+        }
+
+        .crew-image img{
+            width: 400px;
+            height: 520px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .crew-container {
+        background-image: url('./../assets/crew/background-crew-mobile.jpg');
+    }
+    
 }
