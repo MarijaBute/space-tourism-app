@@ -2,6 +2,7 @@ import './header.css';
 import logo from './../assets/shared/logo.svg';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import closeIcon from './../assets/shared/icon-close.svg'
 
 export default function Header() {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -27,11 +28,12 @@ export default function Header() {
                     </button>
                     {isMobileMenuOpen && (
                         <nav className="mobile-navbar">
+                             <img src={closeIcon} alt="close-icon" className="close-icon" />
                             <ul className="mobile-menu">
-                                <li><NavLink to="/home" activeClassName="active"><span className='navbar-numbers'>00</span> HOME</NavLink></li>
-                                <li><NavLink to="/destination" activeClassName="active"><span className='navbar-numbers'>01</span> DESTINATION</NavLink></li>
-                                <li><NavLink to="/crew" activeClassName="active"><span className='navbar-numbers'>02</span> CREW</NavLink></li>
-                                <li><NavLink to="/technology" activeClassName="active"><span className='navbar-numbers'>03</span> TECHNOLOGY</NavLink></li>
+                                <li><NavLink to="/home" activeClassName="active"><span className='mobile-navbar-numbers'>00</span> HOME</NavLink></li>
+                                <li><NavLink to="/destination" activeClassName="active"><span className='mobile-navbar-numbers'>01</span> DESTINATION</NavLink></li>
+                                <li><NavLink to="/crew" activeClassName="active"><span className='mobile-navbar-numbers'>02</span> CREW</NavLink></li>
+                                <li><NavLink to="/technology" activeClassName="active"><span className='mobile-navbar-numbers'>03</span> TECHNOLOGY</NavLink></li>
                             </ul>
                         </nav>
                     )}
