@@ -3,7 +3,7 @@
 .home-container{
     position: absolute;
     top: 0;
-    left: 0;
+    bottom: 0;
     z-index: -1; 
     background-image: url('./../assets/home/background-home-desktop.jpg');
     background-size:cover; 
@@ -74,8 +74,7 @@ p{
     box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1036);
 } 
 
-@media screen and (max-width: 1024px) {
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
         .home-container {
             background-image: url('./../assets/home/background-home-tablet.jpg');
         }
@@ -93,21 +92,69 @@ p{
             max-width: 450px;
         }
 
+        .home-content h3 {
+            font-size: 20px;
+            letter-spacing: 3.375px;
+        }
+
         .home-content span {
             font-size: 150px;
         }
 
         .home-content p {
             text-align: center;
+            font-size: 16px;
+            line-height: 28px;
         }
-    }
 
 }
 
 @media screen and (max-width: 767px) {
     .home-container {
-        background-image: url('./../assets/home/background-home-mobile.jpg');;
+        background-image: url('./../assets/home/background-home-mobile.jpg');
     }
+
+    .home-content h3 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+        line-height: 25px; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content span {
+        color: #FFF;
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100px; 
+    }
+
+    .home-content-container {
+        gap: 0;
+    }
+
+    .home-content {
+        margin-bottom: 10%;
+        padding: 0 5%;
+    }
+
+    .home-explore {
+        font-size: 20px;
+        padding: 70px 40px;
+    }
+
+
 }
 
 
