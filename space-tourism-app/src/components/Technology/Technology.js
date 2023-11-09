@@ -32,6 +32,7 @@ function handleTechnologySelect (index) {
             </div>
             <div className='image-container'>
                 <img src={selectedTechnology.images.portrait} alt={selectedTechnology.name} className='technology-img'/>
+                <img src={selectedTechnology.images.landscape} alt={selectedTechnology.name} className='technology-img-landscape'/>
             </div>
         </div>
       </div>

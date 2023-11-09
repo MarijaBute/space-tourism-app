@@ -9,6 +9,9 @@ import AnoushehImage from './crew/image-anousheh-ansari.png'
 import LauchVehicleImage from './technology/image-launch-vehicle-portrait.jpg'
 import SpaceportImage from './technology/image-spaceport-portrait.jpg'
 import SpaceCapsuleImage from './technology/image-space-capsule-portrait.jpg'
+import LaunchVehicleLandscape from './technology/image-launch-vehicle-landscape.jpg'
+import SpaceportLandscape from './technology/image-spaceport-landscape.jpg'
+import SpaceCapsuleLandscape from './technology/image-space-capsule-landscape.jpg'
 
 export {
     MoonImage,
@@ -21,5 +24,9 @@ export {
     AnoushehImage,
     LauchVehicleImage,
     SpaceportImage,
-    SpaceCapsuleImage
+    SpaceCapsuleImage,
+    LaunchVehicleLandscape,
+    SpaceportLandscape,
+    SpaceCapsuleLandscape
+
 }
