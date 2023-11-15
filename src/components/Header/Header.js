@@ -1,8 +1,8 @@
 import './header.css';
-import logo from './../assets/shared/logo.svg';
+import logo from '../assets/shared/logo.svg';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import closeIcon from './../assets/shared/icon-close.svg'
+import closeIcon from '../assets/shared/icon-close.svg'
 
 export default function Header() {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <header>
-            <svg className="site-logo-svg" width="35%" height="1" viewBox="0 0 100% 1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <svg className="site-logo-svg" width="35%" height="1" viewBox="0 0 100px 1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
                 <rect opacity="0.251485" width="100%" height="1" fill="white" />
             </svg>
             <div className='header-container'>
