@@ -37,7 +37,7 @@
 
 .crew-header-text {
     color: #FFF;
-    font-family: Bellefair;
+    font-family: Barlow Condensed;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
@@ -135,7 +135,11 @@
             margin-right: auto;
             gap: 5px;
         }
-    
+
+        .crew-bio-container {
+            height: 180px;
+        }
+
         .crew-header {
             max-width: 100%;
             margin-left: 40px;
@@ -195,48 +199,87 @@
 
 }
 
+@media screen and (max-width: 900px) {
+    .crew-image img{
+        max-width: 400px;
+        max-height: 520px;
+        width: 90%;
+        height: 90%;
+        margin-top: 20px;
+    }
+}
+
+
 @media screen and (max-width: 767px) {
     .crew-container {
         background-image: url('./../assets/crew/background-crew-mobile.jpg');
     }
 
+    .crew-content {
+        margin-top: 70px;
+    }
+
     .crew-header {
         text-align: center;
         margin-bottom: 20px;
+        margin-top: 0;
+        margin-left: 0;
     }
-    .crew-content-container {
-        flex-direction: column-reverse; /* Stack columns in reverse order for mobile */
-      }
-    
-      .crew-text-content {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-    
-      .crew-role,
-      .crew-name,
-      .crew-bio {
-        text-align: center;
-      }
-    
-      .crew-image {
-        margin-top: 20px;
-        position: relative;
-        margin-left: auto; /* Center the image horizontally */
-        margin-right: auto;
-      }
 
-      .crew-image img {
-        width: 340px;
-        height: 460px;
-      }
+    .crew-header-text,   
+    .crew-header-number  {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .crew-content-container {
+        flex-direction: column-reverse; 
+    }
     
+    .crew-text-content {
+        text-align: center;
+        width: 90%;
+        flex-direction: column-reverse;  
+    }
     
-      .circles {
+    .crew-role,
+    .crew-name,
+    .crew-bio {
+        text-align: center;
+    }
+
+    .crew-role {
+        font-size: 16px;
+        margin-block: 12px;
+    }
+
+    .crew-name {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .crew-bio {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .crew-image {
+        padding: 0 15%;
+        height: 220px;
+        width: 177px;
+        border-bottom: 1px solid #383B4B;
+    }
+
+    .crew-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    .circles {
         display: flex;
         justify-content: center;
-      }
-
-    
+        margin-bottom: 0;
+    } 
     
 }

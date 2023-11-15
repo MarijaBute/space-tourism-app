@@ -17,37 +17,41 @@ export default function Crew() {
       </div>
         <div className="crew-content-container">
           <div className="crew-text-content">
-            <h3 className='crew-role'>{role}</h3>
-            <h1 className="crew-name">{name}</h1>
-            <div className="crew-bio-container">
-              <p className="crew-bio">{bio}</p>
+            <div>
+              <h3 className='crew-role'>{role}</h3>
+              <h1 className="crew-name">{name}</h1>
+              <div className="crew-bio-container">
+                <p className="crew-bio">{bio}</p>
+              </div>
             </div>
-            <ul className="circles">
-              {crew.map((item, index) => (
-                <li key={index} className='circle'>
-                  <button
-                    onClick={() => setValue(index)}
-                    style={{
-                      backgroundColor: index === value ? '#fff' : '#808080',
-                      color: index === value ? '#808080' : '#fff',
-                      borderRadius: '50%',
-                      border: 'none',
-                      height: '15px',
-                      width: '15px',
-                      transition: 'background-color 0.3s',
-                    }}
-                    onMouseEnter={(e) => {
-                      e.target.style.backgroundColor = 'rgb(72, 72, 72)';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.target.style.backgroundColor = index === value ? '#fff' : '#808080'; 
-                    }}
-                  >
-                  </button>
+            <div>
+              <ul className="circles">
+                {crew.map((item, index) => (
+                  <li key={index} className='circle'>
+                    <button
+                      onClick={() => setValue(index)}
+                      style={{
+                        backgroundColor: index === value ? '#fff' : '#808080',
+                        color: index === value ? '#808080' : '#fff',
+                        borderRadius: '50%',
+                        border: 'none',
+                        height: '15px',
+                        width: '15px',
+                        transition: 'background-color 0.3s',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.backgroundColor = 'rgb(72, 72, 72)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = index === value ? '#fff' : '#808080'; 
+                      }}
+                    >
+                    </button>
 
-                </li>
-              ))}
-            </ul>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="crew-image">
             <img src={images.png} alt={name} />

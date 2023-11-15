@@ -126,12 +126,12 @@
 
 @media screen and (max-width: 1024px) {
     .technology-container {
-      background-image: url('./../assets/technology/background-technology-tablet.jpg')
+      background-image: url('./../assets/technology/background-technology-tablet.jpg');
     }
 
     .technology-header {
         max-width: 100%;
-        margin-left: 0px;
+        margin-left: 40px;
         margin-top: 40px;
     }
     
@@ -145,14 +145,15 @@
         letter-spacing: 3.375px;
     }
   
-    .technology-content{
-        margin-left: 50px;
+    .technology-content {
+        margin-left: 0;
     }
 
     .technology-content-container {
       display: flex;
       flex-direction: column; 
       width: 100%; 
+      gap: 30px;
     }
 
     .technology-img {
@@ -161,23 +162,37 @@
 
     .technology-img-landscape {
       display: block;
-      position: absolute;
-      left: 0;
-      right: 0;
-      order: 1; 
       width: 100%;
-      margin-top: 0; 
+      height: auto;
+      margin: auto; 
     }
   
+    .image-container {
+        width: 100%;
+    }
+
+    .technology-name {
+        font-size: 40px;
+    }
+
+    .technology-description {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
     .technology-buttons {
-      order: 2; 
-      flex-direction: row;
-      margin-top: 40%;
+        order: 2; 
+        flex-direction: row;
+    }
+
+    .technology-button {
+        width: 60px;
+        height: 60px;
     }
   
     .technology-text {
-      order: 3; 
-      max-width: 60%;
+      order: 3;
+      max-width: 70%;
     }
 
     .technology-terminology,
@@ -192,4 +207,53 @@
     .technology-container {
         background-image: url('./../assets/technology/background-technology-mobile.jpg')
     }
+
+    .technology-content {
+        align-items: center;
+        margin-top: 70px;
+        gap: 20px;
+    }
+
+    .technology-header {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .technology-content-container {
+        gap: 20px;
+    }
+
+    .technology-header-number,
+    .technology-header-text {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .technology-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .technology-text {
+        max-width: 90%;
+    }
+
+    .technology-terminology {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+        margin: 0;
+    }
+
+    .technology-name {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .technology-description {
+        font-size: 15px;
+    }
+  
+
+
 }

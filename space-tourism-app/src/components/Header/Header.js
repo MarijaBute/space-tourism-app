@@ -28,7 +28,7 @@ export default function Header() {
                     </button>
                     {isMobileMenuOpen && (
                         <nav className="mobile-navbar">
-                             <img src={closeIcon} alt="close-icon" className="close-icon" />
+                             <img src={closeIcon} alt="close-icon" className="close-icon" onClick={toggleMobileMenu} />
                             <ul className="mobile-menu">
                                 <li><NavLink to="/home" activeClassName="active"><span className='mobile-navbar-numbers'>00</span> HOME</NavLink></li>
                                 <li><NavLink to="/destination" activeClassName="active"><span className='mobile-navbar-numbers'>01</span> DESTINATION</NavLink></li>
