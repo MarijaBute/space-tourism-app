@@ -4,7 +4,7 @@ React-based space tourism website that features a dynamic experience.
 
 ![screenshot](./src/components/assets/app_desktop_screenshot.png)
 
-<!-- DESCRIPTION OF THE PROJECT -->
+The website allows users to view the optimal layout for each of the website's pages depending on their device's screen size, see hover states for all interactive elements on the page and view each page and be able to toggle between the tabs to see new information.
 
 ## Built With
 
@@ -15,7 +15,7 @@ React-based space tourism website that features a dynamic experience.
 
 ## Live Demo
 
-<!-- [Live Demo Link](https://ecommerce-product-page-react-project.netlify.app/)  -->
+[Live Demo Link](https://space-tourism-react-project.netlify.app/)
 
 ## Getting Started
 
