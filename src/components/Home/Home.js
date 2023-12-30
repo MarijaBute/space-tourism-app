@@ -1,6 +1,8 @@
 import './home.css'
+import { useNavigate  } from 'react-router-dom'
 
 export default function Home() {
+    const navigate = useNavigate()
     return (
         <div className="home-container">
             <div className='home-container-area'>
@@ -13,7 +15,9 @@ export default function Home() {
                         edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
                     </div>
                     <div className="home-explore-btn">
-                        <button className="home-explore">EXPLORE</button>
+                        <button className="home-explore"
+                        onClick={() => navigate("/destination")}
+                        >EXPLORE</button>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,27 @@
 import './destination.css'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { data } from '../data';
 
 export default function Destination() {
-  const destinations = data.destinations
+  //const destinations = data.destinations
+  const [destinations] = useState(data.destinations)
   const [selectedDestination, setSelectedDestination] = useState(destinations[0])
 
   const handleDestinationSelect = (destination) => {
     setSelectedDestination(destination)
   }
+
+  useEffect(() => {
+    const updateDestination = () => {
+      const currentIndex = destinations.findIndex((dest) => dest === selectedDestination);
+      const nextIndex = (currentIndex + 1) % destinations.length;
+      setSelectedDestination(destinations[nextIndex]);
+    };
+
+    const intervalId = setInterval(updateDestination, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [destinations, selectedDestination]);
 
   return (
     <div className="destination-container">
@@ -27,9 +40,9 @@ export default function Destination() {
             <div className="destination-text-content">
               <nav>
                 <ul className="destination-nav-menu">
-                  {destinations.map((destination, index) => (
+                  {destinations.map((destination, value) => (
                     <li
-                      key={index}
+                      key={value}
                       className={`destination-nav-title ${destination === selectedDestination ? 'active' : ''}`}
                       onClick={() => handleDestinationSelect(destination)}>
                       {destination.name}

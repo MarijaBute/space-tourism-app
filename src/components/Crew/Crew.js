@@ -1,15 +1,30 @@
 import './crew.css';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { data } from '../data'
 
 export default function Crew() {
   const [crew] = useState(data.crew)
   const [value, setValue] = useState(0)
 
+  useEffect (() => {
+    const interval = setInterval(() => {
+    let nextIndex = value + 1;
+    if
+    (nextIndex === crew.length) {
+    nextIndex = 0;
+    }
+
+    setValue(nextIndex);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  },[value, crew.length]);
+
   const { name, role, bio, images } = crew[value]
 
   return (
     <div className="crew-container">
+      <div className='crew-container-area'>
       <div className="crew-content">
           <div className="crew-header">
           <span className="crew-header-number">02</span>
@@ -57,6 +72,7 @@ export default function Crew() {
             <img src={images.png} alt={name} />
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
